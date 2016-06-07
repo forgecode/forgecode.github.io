@@ -1,21 +1,44 @@
 html, body {
 	width: 100%;
 	height: 100%;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.wrap {
+    background-color: #90CAF9;
+    margin: 16px;
+    height: 96%;
+    border-radius: 15px;
 }
 
 header {
+    padding-top: 60px;
 	font-family: 'Poiret One', cursive;
-	border-top: 5px solid #0D47A1;
+    font-weight: bolder;
+    color: #757575;
+    height: 10%;
 }
 
 .intro {
-
+    height: 80%;
+    width: 80%;
 }
 
 .intro-body {
-
+    padding-top: 80px;
+    height: 50%;
 }
 
+.sec {
+    padding-top: 30px;
+    border: 1px solid grey;
+}
+
+.madewith {
+    bottom: 0;
+}
+
+/*//*/
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
