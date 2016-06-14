@@ -8,7 +8,7 @@ body {
 }
 
 
-/* 
+/*
 .wrap {
     background-color: #90CAF9;
     margin: 16px;
@@ -93,10 +93,24 @@ header {
     width: calc(100% - 32px);
     height: calc(100% - 32px);
     font-family: 'Poiret One', cursive;
-    font-weight: bolder;
-    color: black;
+    color: #fff;
+    opacity: 0.4;
 }
 
+
+.bg {
+    background-image: url('../img/mac-bg.jpg') !important;
+    background-size: cover !important;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    /*-webkit-filter: blur(1px);*/
+    /*z-index: -10;*/
+}
+header .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(15,41,61,0.85) !important;
+}
 .dampen {
     background-color: rgba(0, 0, 0, .6);
     opacity: 0;
@@ -107,8 +121,10 @@ header {
 }
 
 .forest {
-    background: #accd3a;
-    background: linear-gradient(to top left, #accd3a, #2bc792);
+    /*background: #accd3a;*/
+    /*background: linear-gradient(to top left, #accd3a, #2bc792);*/
+    /*background: linear-gradient(35deg, #3acdc3, #2b86c7, #8ce67b);*/
+    /*opacity: 0.4;*/
 }
 
 .heading {
@@ -139,15 +155,50 @@ footer {
     padding-top: 125px;
 }
 
+.connect {
+    width: 250px;
+    height: 55px;
+    border-radius: 100px;
+    font-size: 25px;
+    background: #fff;
+    color: #000;
+    text-align: left;
+    padding-left: 45px;
+}
 
+.connect:hover {
+    color: #fff;
+    /*background: #3d97ba;*/
+    background: inherit;
+    font-weight: 600;
+    border-width: medium;
+    border-color: #fff;
+}
+
+header a {
+    color: #fff;
+    font-size: 30px;
+}
+
+.become {
+    font-size: 20px;
+}
 @media screen and (max-width: 768px) {
     html,
     body {
         height: 100%;
-        width: 100%
+        width: 100%;
+        font-size: 12px !important;
     }
     .image {
         width: 70%;
         height: auto;
     }
+    .become {
+        font-size: 15px;
+    }
+
+    .bg {
+        background-image: url('../img/mac-bg-small.jpg') !important;
+     }
 }
